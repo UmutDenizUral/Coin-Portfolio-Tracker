@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: white;
+  background-color: #17212f;
+}
+
+#nav {
+  background-color: #1f2638;
+
+  img {
+    height: 30px;
+    width: 150px;
+    border-radius: 30px;
+  }
+
+  #navOption {
+    color: rgba(255, 255, 255, 0.4);
+  } 
+}
+
+#section1 {
+  background-color: #1f2638;
+
+}
+
+#section2 {
+  background-color: #1f2638;
+
+  td{
+    padding: 6p;
+  }
+
+}
+
+#section3 {
+  background-color: #1f2638;
+
+}
+
+#nav a:hover {
+  @apply text-yellow-500 underline;
+
+}
+
+.fa-user {
+  font-size: 20px;
+  /* İkon boyutu */
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #28313e;
+  /* Scroll bar rengi */
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #323c4f;
+  /* Scroll bar üzerine gelindiğindeki rengi */
+}
+
+
+tr:nth-child(odd) td {
+  background-color: #17212f;
+
+}
+
+/* Çift satırlar için stil */
+tr:nth-child(even) td {
+  background-color: #17212f opacity(0.5);
+
+}
+
+tr td {
+  border-radius: 3px;
+  text-align: center;
+  padding: 6px;
+}
+#exchangedata th {
+  @apply pl-2
+  
+  
+}
+.activepage{
+  @apply text-yellow-500
+
+  border-b-2 border-yellow-500
+  bg-slate-500
+  rounded-sm
+}
